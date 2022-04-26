@@ -1,0 +1,82 @@
+.sidebar
+  background-color: lighten($color-primary, 15%)
+  height: 100vh
+  left: 0
+  position: fixed
+  top: $header-height
+  width: $header-height
+
+  &__label
+    background-color: lighten($color-primary, 15%)
+    border-bottom-right-radius: 3px
+    border-bottom: 1px solid rgba($color-white, .2)
+    border-top-right-radius: 3px
+    border-top: 1px solid rgba($color-white, .2)
+    color: transparent
+    font-size: 16px
+    height: 70px
+    left: 70px
+    line-height: 70px
+    overflow: hidden
+    position: absolute
+    top: -1px
+    transition: all 250ms ease-in-out
+    width: 0
+
+  &__item
+    align-items: center
+    border-bottom: 1px solid transparent
+    border-top: 1px solid rgba($color-white, .2)
+    color: $color-white
+    cursor: pointer
+    display: flex
+    font-size: 24px
+    height: $header-height
+    justify-content: center
+    position: relative
+    transition: all 250ms ease-in-out
+    flex-flow: column
+
+    &:last-child
+      border-bottom: 1px solid rgba($color-white, .2)
+      height: 70px
+
+    span
+      transition: text-shadow 250ms ease-in-out
+
+    &:active,
+    &:visited
+      color: $color-white
+
+    &:hover,
+    &:focus
+      background-color: lighten($color-primary, 25%)
+  
+    &.active
+      background-color: lighten($color-primary, 25%)
+      border-bottom: 0
+
+      span
+        text-shadow: 0 0 8px rgba(#00c9ff, .6), 0 0 15px rgba(#4591ed, .6), 0 0 20px rgba(#513cc6, .6)
+
+    span
+      +text-shadow
+
+      &.icon-users-outline
+        &::before
+          margin-left: 0
+
+  &__session
+    font-size: 8px
+    text-transform: uppercase
+
+    &:hover,
+    &:focus
+      .sidebar__label
+        background-color: lighten($color-primary, 25%)
+        color: $color-white
+        padding-left: 0
+        width: 135px
+
+  a
+    text-decoration: none

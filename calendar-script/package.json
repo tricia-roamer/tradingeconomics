@@ -1,0 +1,24 @@
+{
+  "name": "calendar-script",
+  "version": "1.0.0",
+  "description": "this is a script to fetch economic calendar events based on importance level",
+  "main": "server.js",
+  "scripts": {
+    "calender": "node ./scripts/calendar.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://bitbucket.org/regis-abacus/express-app.git"
+  },
+  "author": "tricia_roamer",
+  "homepage": "https://bitbucket.org/regis-abacus/express-app#readme",
+  "dependencies": {
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.25.4",
+    "got": "^11.8.3",
+    "inquirer": "^8.2.0",
+    "moment-timezone": "^0.5.34",
+    "nodemon": "^2.0.15"
+  }
+}

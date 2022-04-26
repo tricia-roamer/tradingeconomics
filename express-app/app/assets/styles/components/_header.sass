@@ -1,0 +1,33 @@
+header
+  +fill-parent
+  align-items: center
+  background-color: $color-white
+  box-sizing: border-box
+  display: flex
+  height: $header-height
+  padding-right: $padding-1
+  position: fixed
+  z-index: 99
+  border-bottom: 1px solid rgba($color-primary, 0.1)
+
+  img
+    background-color: $color-white
+    height: 50px
+    padding-left: $padding-1
+    padding-right: $padding-2
+    width: 50px
+
+  form
+    flex: 1
+
+  .title
+    +font-light
+    font-size: 16px
+    margin-left: $padding-1
+    margin-right: $padding-3
+
+  .authentication
+    margin-right: $padding-2
+
+    button
+      padding: 12px $padding-1 12px $padding-2

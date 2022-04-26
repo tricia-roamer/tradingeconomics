@@ -1,0 +1,20 @@
+doctype html
+html
+  head
+    title Trading Economics
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    link(rel="stylesheet" type="text/css" href=`${rootPrefix}styles/application.css`)
+    link(rel="apple-touch-icon" sizes="180x180" href=`${rootPrefix}images/apple-touch-icon.png`)
+    link(rel="icon" type="image/png" sizes="32x32" href=`${rootPrefix}images/favicon-32x32.png`)
+    link(rel="icon" type="image/png" sizes="16x16" href=`${rootPrefix}images/favicon-16x16.png`)
+    link(rel="stylesheet", href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css", integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7", crossorigin="anonymous")
+    meta(name="msapplication-TileColor" content="#302d43")
+    meta(name="theme-color" content="#ffffff")
+    script(src='https://cdn.plot.ly/plotly-2.9.0.min.js' type="text/javascript")
+
+  body
+    include header
+    include sidebar
+
+    .content
+      block content

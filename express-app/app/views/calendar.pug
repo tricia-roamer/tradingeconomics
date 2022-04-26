@@ -1,0 +1,20 @@
+extends layout
+
+block content
+  .container
+    .card__row
+      if items.length > 0
+        each item in items
+          .card__item(class=item.category === 'Holidays' ? 'holiday' : '')
+            .card__title=item.event
+            .card__subtitle=h.dateFormat(item.date)
+            p.card__content.flex
+              span.forecast=`Actual: ${item.actual}`
+              span.forecast=`Previous: ${item.previous}`
+              span.forecast=`Forecast: ${item.forecast}`
+            div
+              a.badge.green(href=`https://tradingeconomics.com/${item.url}`) Read More
+              span.badge.blue=item.country
+              span.badge.blue=item.event
+            .importance
+              span.icon-star

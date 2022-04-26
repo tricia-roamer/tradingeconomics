@@ -1,0 +1,26 @@
+{
+  "name": "tradingeconomics",
+  "version": "1.0.0",
+  "description": "A express app that retrieves news and calendar information",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./server.js",
+    "watch": "nodemon ./server.js --ignore public/"
+  },
+  "author": "tricia_roamer",
+  "dependencies": {
+    "body-parser": "^1.19.2",
+    "camelcase": "^6.3.0",
+    "dotenv": "^16.0.0",
+    "eslint": "^8.10.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.25.4",
+    "express": "^4.17.3",
+    "express-session": "^1.17.2",
+    "luxon": "^2.3.1",
+    "node-sass-middleware": "^1.0.1",
+    "nodemon": "^2.0.15",
+    "pug": "^3.0.2",
+    "tradingeconomics": "^1.0.13"
+  }
+}
