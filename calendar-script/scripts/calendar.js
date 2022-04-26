@@ -57,8 +57,6 @@ const timeZoneChoices = () => {
     // retrieve calendar data from tradingeconomics
     const data = await getCalendar(answers);
 
-    console.log(data);
-
     // add event data to array
     const tableData = data.reduce((acc, obj) => {
       if (obj.Category === 'Calendar') { return acc; }
